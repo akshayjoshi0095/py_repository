@@ -61,7 +61,19 @@ for i in s:
 
 ## -------------------------------------------------------------------
 
+def sorting(l):
+    #l=l.split(',')
+    for i in range(1,len(l)):
+        k=l[i]
+        j=i-1
+        while (j >= 0 and l[j] > k):
+            l[j+1] = l[j]
+            l[j] = k
+            j=j-1
+        print l
+    
 
+sorting([9,7,3,8,1,100,-7,34,56])
 
 
 
