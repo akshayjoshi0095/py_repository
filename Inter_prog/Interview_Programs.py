@@ -1,3 +1,6 @@
+from threading import *
+
+
 ###     1-WAP fabonicci series using generator
 
 def fabo_generator():
@@ -75,6 +78,26 @@ def sorting(l):
 
 sorting([9,7,3,8,1,100,-7,34,56])
 
+
+## ----------------------------------------------------------------
+
+#from threading import *
+def sum(*s):
+    res=0
+    for i in s:
+        res=res+i
+    return res
+
+def multithreading_return(*l):
+    print 'sum is {} \n'.format(sum(*l))
+
+
+print current_thread().name
+t1=Thread(target=multithreading_return,args=(1,2,3,4))
+t2=Thread(target=multithreading_return,args=(5,5,5,5,2,3,5))
+t1.start()
+t2.start()
+print '\ndone'
 
 
 
