@@ -103,8 +103,20 @@ print('\ndone')
 
 
 
+'''
+WAP of factorial
 
+NOTE :- returning is compulsory and then either store in variable or print directly
 
+'''
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        result=n*fact(n-1)
+        return result
+res=fact(5)
+print('factorial:%d'%res)
 
 
 
