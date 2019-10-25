@@ -116,7 +116,7 @@ def fact(n):
         result=n*fact(n-1)
         return result
 res=fact(5)
-print('factorial:%d'%res)
+print 'factorial:%d'%res
 
 
 
