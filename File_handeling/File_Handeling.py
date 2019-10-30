@@ -213,6 +213,31 @@ way to know the details of any file
 >>os.stat('foldername with location')
 
 
+
+CSV Handeling
+
+1-Way to writing csv
+f=openfile('path with name',w,newline='')
+w=csv.writer(f)
+w.writerow(['ele1','ele2','ele3'])
+
+now of times we use w.writerow that many rows will get created
+and column depends on the no. of element we are passing in the list
+
+eg - 
+with open('D:\\TRY\\student1.csv','w') as f:
+    w=csv.writer(f)
+    w.writerow(['Name','Age','salary','exp'])
+    while True:
+        res = input('do u want one more entry:')
+        if res.lower() == 'no':
+            break
+        name = input('name:')
+        age = input('age')
+        sal = input('sal')
+        exp = input('exp')
+        w.writerow([name, age, sal])
+
 '''
 
 # f=open('D:\\abc.txt', 'r+')
