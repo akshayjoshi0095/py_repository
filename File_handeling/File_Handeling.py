@@ -237,19 +237,6 @@ with open('D:\\TRY\\student1.csv','w') as f:
         sal = input('sal')
         exp = input('exp')
         w.writerow([name, age, sal])
-		
-2-Way to reading csv
-r=csv.reader(f)
-data=list[r]      
->> it will return a list containing elements equal to no. of rows present in csv and that of list data type.
->> each list ele contains no of element = no. of column present in csv
->> eg data=[[1,2,3],[1,2,3],[1,2,3]]
-
-eg-
-with open('D:\\TRY\\student6.csv','r') as f:
-    r=csv.DictReader(f)                         # DictReader(f) returns row in dict form with headers
-    data=list(r)
-    print data
 
 '''
 
