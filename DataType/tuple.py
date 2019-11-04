@@ -141,5 +141,3 @@ l.pop(index)  ----- remove and return the element present in the specified index
 
 
 
-
-

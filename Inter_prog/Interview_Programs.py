@@ -116,9 +116,12 @@ def fact(n):
         result=n*fact(n-1)
         return result
 res=fact(5)
-print 'factorial:%d'%res
+print ('factorial:%d'%res)
+print (fact(n))
 
 
+l=[1,2,3,4,5,6,7,8,9]
+print (list(map(lambda x:x**2,l)))
 
 
 
