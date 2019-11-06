@@ -119,6 +119,13 @@ res=fact(5)
 print 'factorial:%d'%res
 
 
+''' Anonymous func()'''
+
+l=[1,2,3,4,5,6,7,8,9]
+print(list(map(lambda x:x**2,l)))
+print(list(filter(lambda x:x%2==0,l)))
+s=lambda x:x**2
+print (s(6))
 
 
 
