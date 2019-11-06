@@ -237,6 +237,43 @@ with open('D:\\TRY\\student1.csv','w') as f:
         sal = input('sal')
         exp = input('exp')
         w.writerow([name, age, sal])
+		
+		
+### WAP to create a dublicate csv file
+
+with open('D:\\TRY\\student5.csv','w',newline='') as f:
+    with open('D:\\TRY\\student.csv', 'r') as f1:
+        w=csv.writer(f)
+        r=csv.reader(f1)
+        data=list(r)
+        print data
+        for i in data:
+            w.writerow(i),
+
+
+
+## WAP a achieve data engineering with csv file
+
+with open('D:\\TRY\\student6.csv','w',newline='') as f:
+    with open('D:\\TRY\\student.csv', 'r') as f1:
+        w=csv.writer(f)
+        r=csv.reader(f1)
+        data=list(r)
+        print data
+        for i in range(0,len(data)):
+            if i==0:
+                l=data[i]
+                index1=l.index('salary')
+                index2=l.index('expenses')
+                print index1,type(index1)
+                print index2, type(index2)
+                l.append('sav')
+                w.writerow(l)
+            else:
+                l = data[i]
+                l.append(float(l[index1])-float(l[index2]))
+                w.writerow(l)
+				
 
 '''
 
