@@ -238,6 +238,13 @@ with open('D:\\TRY\\student1.csv','w') as f:
         exp = input('exp')
         w.writerow([name, age, sal])
 
+3- Way to data into csv
+with open('D:\\TRY\\student.csv','a') as f:
+    w=csv.writer(f)
+    print 'pos1:',f.tell()
+    w.writerow(['charlie','34','20000'])
+    print 'pos2:', f.tell()
+
 '''
 
 # f=open('D:\\abc.txt', 'r+')
