@@ -106,5 +106,4 @@ f=open('D:\\TRY\\FileHandeling5.txt','r')
 print f.read()
 
 
-bfjdvkjdfvjkd
 
