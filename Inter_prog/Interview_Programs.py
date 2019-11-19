@@ -139,3 +139,21 @@ WAP to change str of lowercase to uppercase without using lower/upper
 s='akshay'
 for i in s:
     print(chr(ord(i)-32),end='')
+
+	
+'''
+selection sort:
+principle:- find the min most element and then delete it from it location and place it to the 0th index
+            and then repeat the same with rest of the element
+'''
+l=[2,5,4,78,4,6,-7,8,0]
+for i in range(0,len(l)):
+    min=l[i]
+    for j in range(i+1,len(l)):
+        if min>l[j]:
+            min=l[j]
+            print('min:',min)
+    l.remove(min)
+    l.insert(i,min)
+print ('sorted list:',l)
+
