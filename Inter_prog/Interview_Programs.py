@@ -35,19 +35,24 @@ fabo1(10)
 '''
 
 def Prime(n):
- p = []
- for i in range(2, n + 1):
-     j = 2
-     while j < i:
-         if i % j == 0:
-             print('%s is not a prime no' % i)
-             break
-         j += 1
-     if j == i:
-         p.append(i)
-         print('%s is a prime no' % i)
- print('list of all prime no:', p)
+    a=2
+    l=list()
+    l1=[0,1]
+    while len(l)<=n:
+        m=2
+        while m<a:
+            if a%m==0:
+                break
+            else:
+                m+=1
 
+        if m==a:
+            l.append(a)
+        else:
+            l1.append(a)
+        a+=1
+    print('prime no.:',l)
+    print('non-prime no.:', l1)
 Prime(50)
 
 # ------------------------------------------------
@@ -116,7 +121,7 @@ def fact(n):
         result=n*fact(n-1)
         return result
 res=fact(5)
-print 'factorial:%d'%res
+print ('factorial:%d'%res)
 
 
 ''' Anonymous func()'''
@@ -127,5 +132,10 @@ print(list(filter(lambda x:x%2==0,l)))
 s=lambda x:x**2
 print (s(6))
 
+'''
+WAP to change str of lowercase to uppercase without using lower/upper
+'''
 
-ednkjwfekjwfkj
+s='akshay'
+for i in s:
+    print(chr(ord(i)-32),end='')
