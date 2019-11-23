@@ -276,7 +276,7 @@ chaning of relational and equality operator
 
 
 
-"""""
+
 
 
 
@@ -312,4 +312,5 @@ T2=t4-t3
 print('time:',T2)
 
 print (T1<T2)
+"""
 
